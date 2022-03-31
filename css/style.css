@@ -1,0 +1,320 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*,*:before,*:after{
+    box-sizing:border-box;
+}
+
+/*六角官網Layout-nav, header, footer*/
+
+.warp{
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.nav{
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    background-color: #f6f6f6;
+    padding: 8px;
+
+}
+
+.nav li{
+    padding: 0 8px; /*由內往外推灰色線才會被推到中間*/
+}
+
+.nav a{
+    text-decoration: none;
+}
+
+.facebook{
+    border-right: 2px solid #cccccc;
+}
+
+.facebook span{
+    color: #4460a0;
+    
+}
+
+.twitter span{
+    color:#00aaec
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.header h1{
+    background-image: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/logo.png);
+    width: 224px;
+    height: 50px;
+    background-repeat: no-repeat;
+	text-indent: 101%; /*首行縮排*/
+	overflow: hidden; /*超出這個區塊距離就影藏起來*/
+	white-space: nowrap; /*首行縮排不斷行*/
+}
+
+.menu{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #00cc99;
+    display: block;
+    padding: 16px 20px;
+    border-bottom: 3px solid transparent; /*為了固定按鈕避免浮動，先預設一個透明的*/
+
+}
+
+.menu li a:hover{
+    border-bottom: 3px solid #00d79c;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items:flex-start;
+    padding-bottom: 26px;
+    margin: 0 20px;
+}
+
+
+.footer ul li p{
+    font-size: 12px;
+    line-height: 1.5;
+    
+}
+
+.footer ul li span{
+   color: #e12d80;
+    
+}
+
+/*六角官網content-banner, course, table, form*/
+
+.banner {
+    position: relative;
+    margin-bottom: 62px; /*距離course之間*/
+    height: 346px;
+    background: url(https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/banner.png) right center;
+    background-size: cover; /*背景佔滿整個版面不重複*/
+  }
+  
+  .banner h2 {
+    position: absolute;
+    top: 0; /*絕對定位上下置中*/
+    bottom: 0; /*絕對定位上下置中*/
+    display: flex;
+    align-items: center; /*使中間字置中*/
+    margin: auto; /*使整個透明區塊字置中*/
+    width: 100%;  /*透明的寬是整個區塊的百分之百*/
+    height:136px;  /*透明的高*/
+    background-color: rgba(0, 0, 0, 0.3);
+    font-size: 32px;
+    color: #fff;
+    line-height: 1.4;
+    padding: 0 24px;
+  }
+
+  .course{
+    display:flex; /*content內容裡面的course區塊下display:flex，才能使course裡面三個course-item元件並排*/
+    justify-content: space-around; /*依照主軸做裡面三個元件item對齊的方式*/
+    list-style: none; /*最右側列點樣式*/
+    margin-bottom: 62px;
+
+}
+
+.course-item{
+   width:300px; 
+   box-shadow: 0 1px 2px #aaa;
+   display: flex;
+   flex-direction:column;
+   padding-top: 20px;
+
+}
+
+.course li img{
+    display: block;
+    height: auto;
+    margin: auto;
+}
+
+.text {
+    margin: 0 20px;
+    text-align: justify;
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
+
+.course-item h4{
+    font-weight: bold;  /*使course-item裡的h2變粗*/
+    text-align: center; /*使course-item裡的h2置中*/
+    font-size: 16px; 
+    margin-bottom: 10px;
+
+} 
+
+.course-item p{
+    font-size: 12px;
+    line-height: 1.5;
+    text-align: justify; /*使文字左右切齊*/
+}
+
+.course-item ul li{
+    font-size: 12px;
+    line-height: 1.5;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+
+.table{
+    margin-bottom: 62px;
+}
+
+.table h3{
+	text-align: center;
+	font-weight: bold;
+	font-size: 24px;
+	margin: 28px 0px;
+}
+
+.box{
+	width: 840px;
+	margin: 0 auto;
+}
+
+.box th, .box td{
+	text-align: left;
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+
+.box th{
+	padding: 8px;
+	background-color: #f7f7f7;
+	color: black;
+    font-weight: bold;
+}
+
+.box td{
+    font-size: 12px;
+	padding: 8px;
+}
+
+.box span{
+	color: #44b997;
+}
+
+.form{
+    background:linear-gradient(#00654b, #009872);/*預設是上到下漸層*/
+    margin-bottom: 24px; 
+    padding: 30px 20px;
+}
+
+.form h3{
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.form form{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.form form textarea{
+    width: 460px;
+    border-radius: 5px;
+    line-height: 1.5;
+    border: none;
+    padding: 8px 10px;
+
+}
+
+.form form .user-info li {
+    margin-bottom: 16px;
+}
+
+.form form .user-info li label {
+    display: block; /*區塊元素才能使姓名與輸入欄是斷行的*/
+    margin-bottom: 4px;
+    color: white;
+}
+
+.form form .user-info li input {
+    width: 460px;
+    border-radius: 5px;
+    padding: 8px 10px;
+    border: none;
+}
+
+.form input[type='submit'] {
+    background: #00cc99;
+    color: white;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+}
+
+.form input[type='submit']:active {
+    background:white;
+    color: #00956f;
+  }
