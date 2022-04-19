@@ -84,8 +84,17 @@ table {
     
 }
 
+.facebook span:hover{
+    font-weight: bold;
+    
+}
+
 .twitter span{
-    color:#00aaec
+    color:#00aaec;
+}
+
+.twitter span:hover{
+    font-weight: bold;
 }
 
 .header{
@@ -169,37 +178,30 @@ table {
     padding: 0 24px;
   }
 
-  .course{
+.course{
     display:flex; /*content內容裡面的course區塊下display:flex，才能使course裡面三個course-item元件並排*/
     justify-content: space-around; /*依照主軸做裡面三個元件item對齊的方式*/
-    list-style: none; /*最右側列點樣式*/
     margin-bottom: 62px;
+    list-style: none; /*最右側列點樣式*/
 
 }
 
 .course-item{
    width:300px; 
    box-shadow: 0 1px 2px #aaa;
-   display: flex;
-   flex-direction:column;
-   padding-top: 20px;
+   padding: 24px;
 
 }
 
 .course li img{
-    display: block;
-    height: auto;
-    margin: auto;
+   display: flex;
+   height: 140px;
+   justify-items: center;
+   margin: 0 auto;
 }
 
-.text {
-    margin: 0 20px;
-    text-align: justify;
-    line-height: 1.5;
-    padding-bottom: 20px;
-  }
-
 .course-item h4{
+    padding-top: 16px;
     font-weight: bold;  /*使course-item裡的h2變粗*/
     text-align: center; /*使course-item裡的h2置中*/
     font-size: 16px; 
@@ -218,6 +220,7 @@ table {
     line-height: 1.5;
     list-style-type: disc;
     list-style-position: inside;
+    
 }
 
 .table{
@@ -314,7 +317,11 @@ table {
     margin-left: auto;
 }
 
+.form input[type='submit']:hover {
+    cursor: pointer;
+}
+
 .form input[type='submit']:active {
     background:white;
     color: #00956f;
-  }
+}

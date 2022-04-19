@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>最終作業-六角學院_HTML、CSS-一頁式網頁</title>
-    <link rel="icon" href="https://www.hexschool.com/favicon.ico">
+    <link rel="shortcut icon" href="https://www.hexschool.com/favicon.ico">
     <meta name="description" content="HTML、CSS 最終作業（一頁式網頁）" >
     <meta name="keywords" content="HexSchool, 六角學院, HTML, CSS, 最終作業">
     <meta content="六角學院" name="author">
+    <meta property="og:title" content="最終作業-六角學院_HTML、CSS-一頁式網頁">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yuxuan0628.github.io/HTMLcss--PSD/">
+    <meta property="og:image" content="https://www.hexschool.com/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -46,35 +50,36 @@
             </div>
             <ul class="course">
                 <li class="course-item">
-                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="HtmlLOGO">
-                    <div class="text">
-                       <h4>HTML5 基礎教學</h4>
-                       <p>
-                           主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
-                       </p>
-                   </div>
+                    <div class="img">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/html.png" alt="HtmlLOGO">
+                    </div>
+                    <h4>HTML5 基礎教學</h4>
+                    <p>
+                        主流前端網站設計的基礎就在六角學院，在這裡不再是填鴨式教學，而是透過實際的範例，了解正確的網站開發流程，講師均具有業界開發經驗，讓學員學習業界主流的開發方法。
+                    </p>
+                   
                 </li>
                 <li class="course-item">
-                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="RWDlogo">
-                    <div class="text">
-                       <h4>響應式網站設計</h4>
-                       <p>
-                           響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生暸解行動版開發技巧。
-                        </p>
+                    <div class="img">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/rwd.png" alt="RWDlogo">
                     </div>
+                    <h4>響應式網站設計</h4>
+                    <p>
+                        響應式網站設計(Responsive web design)，目前大多使用者均是以手機瀏覽的情況下，響應式網站已經是必備的。六角學院將會提供業界響應式開發方法，讓學生暸解行動版開發技巧。
+                    </p>
                 </li>
                 <li class="course-item">
-                    <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQueryLOGO">
-                    <div class="text">
-                       <h4>jQuery實戰教學</h4>
-                       <p>本課程有以下特色</p>
-                       <ul>
-                           <li>暸解變數的使用方法</li>
-                           <li>學習並操作DOM</li>
-                           <li>學習基本數學運算方法</li>
-                           <li>套件的操作及運用</li>
-                       </ul>
+                    <div class="img">
+                        <img src="https://raw.githubusercontent.com/hexschool/HTMLHWSource/master/singlePage/jQuery.png" alt="jQueryLOGO">
                     </div>
+                    <h4>jQuery實戰教學</h4>
+                    <p>本課程有以下特色</p>
+                    <ul>
+                        <li>暸解變數的使用方法</li>
+                        <li>學習並操作DOM</li>
+                        <li>學習基本數學運算方法</li>
+                        <li>套件的操作及運用</li>
+                    </ul>
                 </li>
             </ul>
             <div class="table">
@@ -131,25 +136,26 @@
                     <br>
                     歡迎留下您的資料
                 </h3>
-                <form action="index.html">
-                    <textarea name="message" cols="55" rows="12" placeholder="請留言..." ></textarea>
-                    <ul class="user-info">
-                        <li>
-                            <label for="name">姓名</label>
-                            <input id="name" type="text" placeholder="請輸入姓名" name="name">
-                        </li>
-                        <li>
-                            <label for="tel">電話</label>
-                            <input id="tel" type="text" placeholder="請輸入電話" name="tel">
-                        </li>
-                        <li>
-                            <label for="mail">信箱</label>
-                            <input id="mail" type="text" placeholder="請輸入Emali" name="mail">
-                        </li>
-                        <input type="submit" value="送出">
-                    </ul>
-                </form>
-
+                    <form action="index.html">
+                        <textarea name="message" rows="12" placeholder="請留言..." ></textarea>
+                        <div class="connect-text">
+                            <ul class="user-info">
+                                <li>
+                                    <label for="name">姓名</label>
+                                    <input id="name" type="text" placeholder="請輸入姓名" name="name">
+                                </li>
+                                <li>
+                                    <label for="tel">電話</label>
+                                    <input id="tel" type="tel" placeholder="請輸入電話" name="tel">
+                                </li>
+                                <li>
+                                    <label for="mail">信箱</label>
+                                    <input id="mail" type="email" placeholder="請輸入Emali" name="mail">
+                                </li>
+                            </ul>
+                            <input type="submit" value="送出">
+                        </div>
+                    </form>
             </div>
 
         </div>
