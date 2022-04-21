@@ -147,9 +147,16 @@ table {
     
 }
 
-.footer ul li span{
+.footer ul li p a{
    color: #e12d80;
+   text-decoration:none;
     
+}
+
+.footer ul li p a:hover{
+    color: #e12d80;
+    text-decoration:underline;
+     
 }
 
 /*六角官網content-banner, course, table, form*/
@@ -190,14 +197,33 @@ table {
    width:300px; 
    box-shadow: 0 1px 2px #aaa;
    padding: 24px;
-
 }
 
-.course li img{
+.course .course-item .img1{
    display: flex;
-   height: 140px;
-   justify-items: center;
-   margin: 0 auto;
+   justify-content:center;
+   width: auto;
+   height: auto;
+  
+}
+
+.course .course-item .img2{
+    display: flex;
+    justify-content:center;
+    width: auto;
+    height: auto;
+    padding: 24.5px 0;
+   
+}
+
+.course .course-item .img3{
+    display: flex;
+    justify-content:center;
+    width: auto;
+    height: auto;
+    padding: 5.5px 0;
+    
+   
 }
 
 .course-item h4{
